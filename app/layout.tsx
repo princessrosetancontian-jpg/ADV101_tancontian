@@ -1,23 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/Header";
 
 export const metadata: Metadata = {
-  title: "Princess Rose Tancontian | Portfolio",
-  description: "Creative portfolio of Princess Rose Tancontian",
+  title: "Studio Notes | Petal & Stem",
+  description: "A thoughtful little notes desk for your flower shop.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
